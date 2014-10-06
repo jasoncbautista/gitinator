@@ -20,9 +20,20 @@ print my_repo
 print "directory"
 print directory
 
+
+def touch(file_name, times=None):
+    """
+    touch
+
+    """
+    with file(file_name, 'wa'):
+        os.utime(file_name, times)
+
 if not os.path.exists(directory):
     os.mkdir(directory)
     os.chdir(directory)
+
+    touch("README.md")
 
 
 
