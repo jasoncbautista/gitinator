@@ -7,8 +7,8 @@ my_dir = "/home/jason/playground/"
 if len(sys.argv) > 1:
     my_repo = sys.argv[1]
 
-my_dir = my_dir + my_repo
 directory = os.path.dirname(my_dir)
+directory = directory + my_repo
 
 print "my_dir" 
 print my_dir
