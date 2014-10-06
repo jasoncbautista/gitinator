@@ -20,7 +20,11 @@ print my_repo
 print "directory"
 print directory
 
-if no os.path.exists(directory):
+if not os.path.exists(directory):
     os.mkdirs(directory)
+    os.chdir(directory)
+
+
+
 
 
