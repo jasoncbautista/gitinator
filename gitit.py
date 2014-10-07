@@ -34,6 +34,8 @@ if not os.path.exists(directory):
     os.chdir(directory)
 
     touch("README.md")
+    os.system("git init")
+    os.system('git commit -am "Readme Files"')
 
 
 
